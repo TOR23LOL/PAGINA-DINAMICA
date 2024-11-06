@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 main{flex-grow: 1;}
@@ -12,4 +13,84 @@ body{
     min-height: 100vh;
     width: auto;
     background-color: bisque;
+
+    header{border-bottom: 4px dashed black;}
+
+    header nav{
+        background-color: rgb(197, 43, 43);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+
+        .flex-header{
+            display: flex;
+
+            h1{font-size: 2.2rem;}
+        }
+    }
+
+    section{
+        display: flex;
+        gap: 0 100px;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+
+        button{
+            width: 100px;
+            height: 40px;
+            padding-block: 10px;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            transition: all 0.7s;
+            font-weight: bolder;
+        }
+
+        button:hover{
+            background-color: white;
+            color: black;
+            transform: translateY(-5px) scale(1.1);
+        }
+    }
+
+    #ocultar-sec{
+        flex-grow: 0;
+        display: none;
+    }
+
+    main{
+        margin-block: 3rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 60px 0;
+
+        .flex-main{
+            display: flex;
+            gap: 0 75px;
+
+            .ul-norte, .ul-centro, .ul-sur{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 1.7rem;
+                background-color: white;
+                border-radius: 30% 30% 30% 30%;
+                border: 5px groove rgb(197, 43, 43);
+
+                h2{font-size: 2rem; margin-bottom: 1.3rem;}
+
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    list-style-type: none;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
 }
