@@ -68,6 +68,8 @@ body{
         align-items: center;
         gap: 60px 0;
 
+        h2{font-size: 2rem;}
+
         .flex-main{
             display: flex;
             gap: 0 75px;
@@ -91,6 +93,27 @@ body{
                     font-size: 1.3rem;
                 }
             }
+
+            .ul-norte:hover{
+                
+            }
+            
+            .ul-centro:hover{
+
+            }
+
+            .ul-sur:hover{
+
+            }
         }
+    }
+
+    footer{
+        background-color: rgb(197, 43, 43);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        border-top: 4px dashed black;
     }
 }
