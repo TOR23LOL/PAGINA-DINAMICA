@@ -1,18 +1,25 @@
-const $header = document.querySelector(".header");
+/*const $header = document.querySelector(".header");
 const $sectionH = document.querySelector(".flex-header");
 const $main = document.querySelector(".main");
 const $sectionM = document.querySelector(".flex-main");
+const $sectionM1 = document.querySelector(".flex-content");
 const $footer = document.querySelector(".footer");
 const $sectionF = document.querySelector(".flex-footer");
 const $boton1 = document.querySelector(".boton1");
 const $boton2 = document.querySelector(".boton2");
+const $img1 = document.querySelector(".img1");
+const $img2 = document.querySelector(".img2");
+const $placehold = document.querySelector(".placehold");
+const $regresar = document.querySelector(".regresar");
 
-$boton1.addEventListener("click", function(){
+$boton2.addEventListener("click", function(){
     //CONTENIDO HEADER
-    let titulo = document.createTextNode("PÁGINA 1");
+    let titulo = document.createTextNode("PÁGINA 2");
     let h1N = document.createElement("h1");
     $sectionH.appendChild(h1N);
     h1N.appendChild(titulo);
+
+    $placehold.setAttribute("id", "visible");
 
     //CONTENIDO MAIN
     let tituloM = document.createTextNode("SECTORES DE QUITO");
@@ -72,8 +79,21 @@ $boton1.addEventListener("click", function(){
         fragmentSS.appendChild(liSS);
     });
     ulSS.appendChild(fragmentSS);
+
+    $img1.setAttribute("id", "img-left");
+    $img2.setAttribute("id", "img-right");
+
+    //CONTENIDO FOOTER
+    $regresar.setAttribute("class", "visible");
 });
 
-$boton2.addEventListener("click", function(){
+$boton1.addEventListener("click", function(){
     
 });
+
+$regresar.addEventListener("click", function(){
+    const $h2 = document.querySelector("");
+    $sectionM.setAttribute("class", "ocultar");
+    $sectionM1.setAttribute("class", "ocultar");
+
+})*/
