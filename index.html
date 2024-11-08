@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header class="header1 ocultar">
-        <div class="logo">
-            <img class="logo-img img-ocultar" src="https://placehold.co/100" alt="Logo" />
+    <header id="header">
+        <div class="ocultar" id="placehold">
+            <img id="placehold-img" src="https://placehold.co/100" alt="Logo" />
         </div>
-        <nav id="nav">
+        <nav class="ocultar" id="nav">
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Introducción</a></li>
@@ -19,52 +19,77 @@
             </ul>
         </nav>
     </header>
-
-    <div class="boton-pagina">
-        <button class="pagina1">Página 1</button>
-        <button class="pagina2">Página 2</button>
-    </div>
     
-    <main class="img-ocultar">
-        <section class="ocultar1">
-            <h2>Primer párrafo</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor iusto expedita necessitatibus assumenda voluptatem eos officia commodi ut ipsa dignissimos, ad ea qui? Quia incidunt facilis aperiam repellat ipsum ad, maxime, perferendis itaque odit consequuntur impedit esse aspernatur pariatur voluptas, maiores error possimus quisquam quam quibusdam nihil vitae cumque. Cumque!</p>
-        </section>
-        
-        <section class="ocultar2">
-            <h2>Párrafo 2</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo sequi repellat temporibus aperiam dolorum labore, sapiente minima? Consequatur mollitia minus itaque perspiciatis neque, cumque dicta sit ut veniam, adipisci vel at repellat expedita fuga, quo doloribus ratione nemo libero veritatis ipsa quidem praesentium. Minus maiores autem id obcaecati laboriosam sit!</p>
-        </section>
+    <main id="paginas">
+        <div id="boton-paginas">
+            <button id="Bpagina1">PÁGINA 1</button>
+            <button id="Bpagina2">PÁGINA 2</button>
+        </div>
+        <div class="ocultar" id="pagina1">
+            <h2>PAGINA 1</h2>
+            <div id="sec-p1">
+                <div id="p1-section1">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus vero accusamus odio a voluptas libero maxime hic, doloremque fuga magnam adipisci commodi molestiae obcaecati accusantium, modi, sapiente totam id rerum?</p>
+                </div>
+                <div id="p1-section2">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, esse incidunt ducimus mollitia molestias pariatur, ipsam debitis assumenda omnis, sed repellat saepe sint. Porro, at eos explicabo inventore cupiditate quod.</p>
+                </div>
+            </div>
+        </div>
+        <div class="ocultar" id="pagina2">
+            <div id="sec-p2">
+                <div id="p2-section1">
+                    <h2>PAGINA 2</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus vero accusamus odio a voluptas libero maxime hic, doloremque fuga magnam adipisci commodi molestiae obcaecati accusantium, modi, sapiente totam id rerum?</p>
+                </div>
+                <div id="p2-section2">
+                    <img id="placehold-img" src="https://placehold.co/250" alt="img" />
+                </div>
+            </div>
+        </div>
     </main>
     
-    <footer>
-        <div class="button-container">
-            <button class="atras">Atrás</button>
+    <footer id="footer">
+        <div id="redes-sociales">
+            <div class="ocultar" id="redes-h3">
+                <h3>REDES SOCIALES</h3>
+            </div>
+            <div class="ocultar" id="redes">
+                <ul>
+                    <li id="facebook">
+                        <a target="_blank" href="https://www.facebook.com/TOR23LOL">
+                            <div id="fb-img">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="#ffffff" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+                            </div>
+                            <h4>Facebook</h4>
+                        </a>
+                    </li>
+                    <li id="instagram">
+                        <a target="_blank" href="https://www.instagram.com/tor23lol/">
+                            <div id="ig-img">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path fill="#ffffff" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                            </div>
+                            <h4>Instagram</h4>
+                        </a>
+                    </li>
+                    <li id="tiktok">
+                        <a target="_blank" href="https://www.tiktok.com/@tor23lol">
+                            <div id="tk-img">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg>
+                                <path fill="#ffffff" d="M364.2 83.8c-24.4-24.4-64-24.4-88.4 0l-184 184c-42.1 42.1-42.1 110.3 0 152.4s110.3 42.1 152.4 0l152-152c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-152 152c-64 64-167.6 64-231.6 0s-64-167.6 0-231.6l184-184c46.3-46.3 121.3-46.3 167.6 0s46.3 121.3 0 167.6l-176 176c-28.6 28.6-75 28.6-103.6 0s-28.6-75 0-103.6l144-144c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-144 144c-6.7 6.7-6.7 17.7 0 24.4s17.7 6.7 24.4 0l176-176c24.4-24.4 24.4-64 0-88.4z"/></svg>
+                            </div>
+                            <h4>TikTok</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ocultar" id="boton-regresar">
+            <div id="regresar"><button id="b-regresar">Atrás</button></div>
         </div>
     </footer>
-    <!--<header class="header">
-        <nav>
-            <div class="flex-header">
-                <img class="placehold" src="https://placehold.co/100" alt="">
-            </div>
-        </nav>
-    </header>
-    <section class="sec-button">
-        <button class="boton1">PÁGINA 1</button>
-        <button class="boton2">PÁGINA 2</button>
-    </section>
-    <main class="main">
-        <div class="flex-content">
-            <div class="img1"><img src="/assets/img/turismo-en-quito-el-panecillo.jpg" alt=""></div>
-            <div class="flex-main"></div>
-            <div class="img2"><img src="/assets/img/Quito - Basilica.jpg" alt=""></div>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="flex-footer">
-            <button class="regresar ocultar">REGRESAR</button>
-        </div>
-    </footer>-->
     <script src="/js/script.js"></script>
 </body>
 </html>

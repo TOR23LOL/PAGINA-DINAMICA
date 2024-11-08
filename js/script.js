@@ -1,17 +1,27 @@
-/*const $header = document.querySelector(".header");
-const $sectionH = document.querySelector(".flex-header");
-const $main = document.querySelector(".main");
-const $sectionM = document.querySelector(".flex-main");
-const $sectionM1 = document.querySelector(".flex-content");
-const $footer = document.querySelector(".footer");
-const $sectionF = document.querySelector(".flex-footer");
-const $boton1 = document.querySelector(".boton1");
-const $boton2 = document.querySelector(".boton2");
-const $img1 = document.querySelector(".img1");
-const $img2 = document.querySelector(".img2");
-const $placehold = document.querySelector(".placehold");
-const $regresar = document.querySelector(".regresar");
+const $header = document.querySelector("#header");
+const $placehold = document.querySelector("#placehold");
+const $nav = document.querySelector("#nav");
+const $main = document.querySelector("#paginas");
+const $BtnPaginas = document.querySelector("#boton-paginas");
+const $BtnPagina1 = document.querySelector("#Bpagina1");
+const $BtnPagina2 = document.querySelector("#Bpagina2");
+const $pagina1 = document.querySelector("#pagina1");
+const $pagina2 = document.querySelector("#pagina2");
+const $footer = document.querySelector("#footer");
+const $redesH3 = document.querySelector("#redes-h3");
+const $redes = document.querySelector("#redes");
+const $BtnRegresar = document.querySelector("#boton-regresar");
 
+$BtnPagina1.addEventListener(function OcultarP1(){
+    $placehold.classList.toggle("ocultar");
+    $nav.classList.toggle("ocultar");
+    $nav.classList.toggle("ocultar");
+    $nav.classList.toggle("ocultar");
+    $nav.classList.toggle("ocultar");
+    $nav.classList.toggle("ocultar");
+});
+
+/*
 $boton2.addEventListener("click", function(){
     //CONTENIDO HEADER
     let titulo = document.createTextNode("PÁGINA 2");
